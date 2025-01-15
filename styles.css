@@ -157,6 +157,60 @@ header {
     gap: 1rem;
 }
 
+.proyectos {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 6rem 0 3rem 2.6px;
+    color: white;
+    opacity: 95%;
+    gap: 1rem;
+}
+
+.proyects-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.5em;
+}
+
+.proyects-container .proyect {
+    position: relative;
+    width: 50%;
+    height: fit-content;
+    padding: 1em 2em;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 1em;
+    background: rgba(255, 255, 255, .02);
+}
+
+.proyects-container .proyect .proyect-info .proyect-title {
+    position: relative;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: #FFC83D;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.proyects-container .proyect .proyect-info .proyect-description {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.proyects-container .proyect .proyect-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
 .custom-purple-badge {
     background-color: #faf5ff;
     /* bg-purple-100 */
