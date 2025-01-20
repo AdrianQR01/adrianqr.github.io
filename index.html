@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adrian Quenard official portfolio.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio Adrian</title>
 </head>
 
 <body>
+    <script src="javascript.js" defer></script>
     <main class="main-div" id="main">
         <div class="seccion-main">
             <section class="seccion1">
@@ -21,7 +23,6 @@
                 <nav class="socials">
                     <a href="https://www.linkedin.com/in/adrianquenard" target="_blank" rel="noopener">
                         <span class="custom-blue-badge">
-                            <!-- <img src="linkedinIcon.png" alt="Github Icon" width="20px" height="20px"> -->
                             Linkedin</span>
                     </a>
                     <a href="https://github.com/AdrianQR01" target="_blank" rel="noopener">
@@ -29,69 +30,76 @@
                     </a>
                 </nav>
             </section>
-            <section class="seccion2">
-                <img src="fotoPerfil.jpg" alt="Foto de Adrian" class="foto-perfil">
+            <section class="seccion2 fade-in">
+                <img src="fotoPerfil.webp" alt="Foto de Adrian" class="foto-perfil">
             </section>
         </div>
 
         <div class="continuacion">
             <section>
-                <div class="experiencia">
+                <div class="experiencia fade-in">
                     <i class="fas fa-briefcase"></i>
                     <h1 class="tituloExperiencia">Work Experience</h1>
                 </div>
-                <ol class="timeline">
+                <ol class="timeline fade-in">
                     <li class="timeline-item">
                         <div class="marker"></div>
                         <time class="date">January 2022</time>
-                        <h3 class="title">City Hall Internships</h3>
-                        <p class="description">Responsible for IT technical support, resolving incidents, managing
-                            equipment and assisting users in the use of systems and networks.</p>
-                        <a href="https://www.villaluengadelasagra.es/" class="button" target="_blank">Learn more
+                        <h2 class="title">City Hall Internships</h2>
+                        <p class="description">Responsible for IT technical support, resolving incidents, managing equipment and assisting users in the use of systems and networks.</p>
+                        <a href="https://www.villaluengadelasagra.es/" class="button" target="_blank">
+                            Learn more about City Hall Internships
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                             </svg>
                         </a>
                     </li>
                     <li class="timeline-item">
                         <div class="marker"></div>
                         <time class="date">January 2024</time>
-                        <h3 class="title">LiderBeauty Internships</h3>
-                        <p class="description">Responsible for front-end and back-end projects, worked with WordPress,
-                            implemented networks, and created and integrated APIs for complete and functional solutions.
-                        </p>
-                        <a href="https://www.liderbeauty.com/" class="button" target="_blank">Learn more
+                        <h2 class="title">LiderBeauty Internships</h2>
+                        <p class="description">Responsible for front-end and back-end projects, worked with WordPress, implemented networks, and created and integrated APIs for complete and functional solutions.</p>
+                        <a href="https://www.liderbeauty.com/" class="button" target="_blank">
+                            Learn more about LiderBeauty Internships
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                             </svg>
                         </a>
                     </li>
                 </ol>
+                
             </section>
             <section id="proyects">
-                <div class="proyectos">
+                <div class="proyectos fade-in">
                     <i class="fas fa-cogs"></i>
                     <h1 class="tituloExperiencia">Proyects</h1>
                 </div>
-                <div class="proyects-container">
+                <div class="proyects-container fade-in">
                     <article class="proyect">
 
                         <figure class="proyect-image">
-                            <img src="dashboard.jpg" width="500" height="280" alt="Colors Kit logo"
+                            <img src="dashboard.webp" width="500" height="280" alt="Colors Kit logo"
                                 data-astro-cid-j7pv25f6="" loading="lazy" decoding="async">
                         </figure>
                         <div class="proyect-info">
                             <h2 class="proyect-title">Dashboard TFC</h2>
                             <p class="proyect-description">Event management dashboard with real-time data, ticketing,
                                 and attendee personalization.</p>
-                            <a href="https://github.com/AdrianQR01/Dashboard-TFC" class="button" target="_blank">Github
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
+                            <div class="badge-container">
+                                <a href="https://github.com/AdrianQR01/Dashboard-TFC" class="button"
+                                    target="_blank">Github
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                                <div>
+                                    <span class="custom-transparent-remix-badge">Remix</span>
+                                    <span class="custom-transparent-tailwindcss-badge">Tailwindcss</span>
+                                    <span class="custom-transparent-postgresql-badge">PostgreSQL</span>
+                                </div>
+                            </div>
                         </div>
                     </article>
                     <article class="proyect">
@@ -103,42 +111,50 @@
                             <h2 class="proyect-title">Hairdresser App</h2>
                             <p class="proyect-description">Client management app for hairdressers to track service
                                 history and preferences.</p>
-                            <a href="https://github.com/AdrianQR01/Dashboard-TFC" class="button" target="_blank">Github
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
+                            <div class="badge-container">
+                                <a href="https://github.com/AdrianQR01/Dashboard-TFC" class="button"
+                                    target="_blank">Github
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                                <div>
+                                    <span class="custom-transparent-purple-badge">Kotlin</span>
+                                    <span class="custom-transparent-orange-badge">SQLite</span>
+                                </div>
+                            </div>
                         </div>
 
                     </article>
                 </div>
             </section>
             <section id="stack">
-                <div class="stack">
+                <div class="stack fade-in">
                     <i class="fas fa-code"></i>
                     <h1 class="tituloStack">Stack</h1>
                 </div>
-                <div class="logos">
+                <div class="logos fade-in">
                     <div class="logos-slide">
-                        <img src="html.png" alt="HTML" class="stack-img">
-                        <img src="css.png" alt="CSS" class="stack-img">
-                        <img src="js.png" alt="JS" class="stack-img">
-                        <img src="react.png" alt="React" class="stack-img">
-                        <img src="postgresql.png" alt="postgresql" class="stack-img">
+                        <img src="html.webp" alt="HTML" class="stack-img">
+                        <img src="css.webp" alt="CSS" class="stack-img">
+                        <img src="js.webp" alt="JS" class="stack-img">
+                        <img src="react.webp" alt="React" class="stack-img">
+                        <img src="postgresql.webp" alt="postgresql" class="stack-img">
                         <img src="java.webp" alt="java" class="stack-img">
-                        <img src="typescript.png" alt="typescript" class="stack-img">
-                        <img src="sql.png" alt="MySQL" class="stack-img">
+                        <img src="typescript.webp" alt="typescript" class="stack-img">
+                        <img src="sql.webp" alt="MySQL" class="stack-img">
                     </div>
                     <div class="logos-slide">
-                        <img src="html.png" alt="HTML" class="stack-img">
-                        <img src="css.png" alt="CSS" class="stack-img">
-                        <img src="js.png" alt="JS" class="stack-img">
-                        <img src="react.png" alt="React" class="stack-img">
-                        <img src="postgresql.png" alt="postgresql" class="stack-img">
+                        <img src="html.webp" alt="HTML" class="stack-img">
+                        <img src="css.webp" alt="CSS" class="stack-img">
+                        <img src="js.webp" alt="JS" class="stack-img">
+                        <img src="react.webp" alt="React" class="stack-img">
+                        <img src="postgresql.webp" alt="postgresql" class="stack-img">
                         <img src="java.webp" alt="java" class="stack-img">
-                        <img src="typescript.png" alt="typescript" class="stack-img">
-                        <img src="sql.png" alt="MySQL" class="stack-img">
+                        <img src="typescript.webp" alt="typescript" class="stack-img">
+                        <img src="sql.webp" alt="MySQL" class="stack-img">
                     </div>
                 </div>
             </section>
@@ -146,10 +162,13 @@
     </main>
     <footer>
         <div class="footer">
-            <div class="footer-icons">
-                <a class="icon-social youtube" aria-label="infojobs" href="https://www.youtube.com/@adrianqr3432" target="_blank"></a>
-                <a class="icon-social linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/adrianquenard/" target="_blank"></a>
-                <a class="icon-social github" aria-label="GitHub" href="https://github.com/AdrianQR01" target="_blank"></a>
+            <div class="footer-icons fade-in">
+                <a class="icon-social youtube" aria-label="infojobs" href="https://www.youtube.com/@adrianqr3432"
+                    target="_blank"></a>
+                <a class="icon-social linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/adrianquenard/"
+                    target="_blank"></a>
+                <a class="icon-social github" aria-label="GitHub" href="https://github.com/AdrianQR01"
+                    target="_blank"></a>
             </div>
             <p class="footer-text">Made with <span class="heart-icon"><i class="fas fa-heart"></i></span> by Adrian
                 Quenard</p>

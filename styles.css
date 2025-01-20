@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest&family=Poppins:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -166,7 +165,7 @@ body {
 .proyects-container .proyect .proyect-info .proyect-description {
   font-size: 1rem;
   color: #fff;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .proyects-container .proyect {
@@ -344,16 +343,13 @@ body {
 
 .button:hover {
   background-color: #f3f4f6;
-  /* gray-100 */
   color: #1d4ed8;
-  /* blue-700 */
   border-color: #1d4ed8;
 }
 
 .button:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.3);
-  /* blue-700 */
 }
 
 .footer-icons {
@@ -378,18 +374,18 @@ body {
 }
 
 .youtube {
-  background-image: url("https://www.iconbolt.com/iconsets/darkwing-free-social/youtube.svg");
+  background-image: url(youtube.webp);
   background-color: white;
   animation-delay: 2s;
 }
 
 .linkedin {
-  background-image: url("https://cdn-icons-png.freepik.com/512/145/145807.png?ga=GA1.1.2025074602.1718813500");
+  background-image: url(linkedin.webp);
   animation-delay: 2.5s;
 }
 
 .github {
-  background-image: url("https://cdn-icons-png.freepik.com/512/11376/11376339.png?ga=GA1.1.2025074602.1718813500");
+  background-image: url(github.webp);
   animation-delay: 3s;
 }
 
@@ -407,6 +403,31 @@ body {
     transform: translateY(-20px);
   }
 }
+
+
+/* Define la animación de fade-in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 2s ease-out forwards;
+}
+
 
 @media screen and (max-width: 800px) {
   .icon::before {
@@ -470,6 +491,73 @@ body {
   margin-inline-end: 0.5rem;
   padding: 0.3rem 1rem;
   border-radius: 0.375rem;
+}
+
+.badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.custom-transparent-tailwindcss-badge {
+  gap: 0.25rem;
+  background-color: transparent;
+  color: #38BDF8;
+  border: 1px solid #38BDF8;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-inline-end: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.custom-transparent-remix-badge {
+  gap: 0.25rem;
+  background-color: transparent;
+  color: #9CDB9B;
+  border: 1px solid #9CDB9B;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-inline-end: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.custom-transparent-postgresql-badge {
+  gap: 0.25rem;
+  background-color: transparent;
+  color: #699EBF;
+  border: 1px solid #699EBF;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-inline-end: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.custom-transparent-purple-badge {
+  gap: 0.25rem;
+  background-color: transparent;
+  color: #9143FB;
+  border: 1px solid #9143FB;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-inline-end: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.custom-transparent-orange-badge {
+  gap: 0.25rem;
+  background-color: transparent;
+  color: #FFC400;
+  border: 1px solid #FFC400;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-inline-end: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
