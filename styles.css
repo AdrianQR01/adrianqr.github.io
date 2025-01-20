@@ -270,12 +270,13 @@ body {
   padding: 1rem;
   text-align: center;
   font-size: 1rem;
-  padding: 5rem;
+  padding: 2.5rem;
 }
 
 .footer-text {
   color: white;
   opacity: 80%;
+  margin-top: 85px;
 }
 
 .heart-icon {
@@ -354,6 +355,95 @@ body {
   box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.3);
   /* blue-700 */
 }
+
+.footer-icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 65px;
+  justify-content: center;
+}
+
+.icon-social {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  border-radius: 50%;
+  animation: wave 4s ease-in-out infinite;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+.icon-social:hover {
+  transform: scale(1.1);
+}
+
+.youtube {
+  background-image: url("https://www.iconbolt.com/iconsets/darkwing-free-social/youtube.svg");
+  background-color: white;
+  animation-delay: 2s;
+}
+
+.linkedin {
+  background-image: url("https://cdn-icons-png.freepik.com/512/145/145807.png?ga=GA1.1.2025074602.1718813500");
+  animation-delay: 2.5s;
+}
+
+.github {
+  background-image: url("https://cdn-icons-png.freepik.com/512/11376/11376339.png?ga=GA1.1.2025074602.1718813500");
+  animation-delay: 3s;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .icon::before {
+    top: -500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    align-items: center;
+    gap: 10px;
+  }
+  .icon {
+    height: 60px;
+    width: 60px;
+  }
+  .icon::before {
+    top: -500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 
 .icon {
   width: 12px;
